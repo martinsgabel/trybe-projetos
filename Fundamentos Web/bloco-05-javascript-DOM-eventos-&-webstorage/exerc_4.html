@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STARTS -->
+    <style>
+        body {
+            text-align: center;
+        }
+        p {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background-color: #8C93A8;
+            width: 500px;
+            padding: 15px;
+        }
+    </style>
+    <!-- CSS ENDS -->
+    <title>QuerySelector</title>
+</head>
+<body>
+    <div class="verse-division">
+        <p class="verses">Timeline A</p>
+        <p class="verses">Timeline B</p>
+    </div>
+
+    <div class="key-division">
+        <p id="key">Atlas Key</p>
+    </div>
+
+    <!-- JS STARTS -->
+    <script>
+
+        //QUERY SELECTOR
+
+            console.log(document.querySelector("div"));
+
+            // mostra apenas o primeiro que satisfaz a condição
+            console.log(document.querySelector(".verses"));
+
+            // para acessar alguma classe ou tag específica o funcionamento é como no CSS
+            console.log(document.querySelector(".verse-division p"));
+
+            console.log(document.querySelector("#key"));
+
+        // QUERY SELECTOR ALL
+
+            console.log(document.querySelectorAll("div"));
+
+            console.log(document.querySelectorAll(".verses").length);
+    </script>
+    <!-- JS ENDS -->
+</body>
+</html>

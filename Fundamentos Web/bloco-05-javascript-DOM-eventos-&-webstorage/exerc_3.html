@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STARTS -->
+    <style>
+        body {
+            text-align: center;
+        }
+        p {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background-color: #423629;
+            width: 500px;
+            padding: 15px;
+        }
+    </style>
+    <!-- CSS ENDS -->
+    <title>Changing colors through Loop</title>
+</head>
+<body>
+    <p class="main-char">Grace Soult</p>
+    <p class="supporting-char">Rauhl Soult</p>
+    <p class="supporting-char">Abrahamech</p>
+    <p class="supporting-char">Oliver Barreau</p>
+
+    <!-- JS STARTS -->
+    <script>
+        const fadingColors = ["#584837", "#64523F", "#715D47"]
+        const supportingCast = document.getElementsByClassName("supporting-char");
+
+        for (let index = 0; index < supportingCast.length; index++) {
+            document.getElementsByClassName("supporting-char")[index].style.backgroundColor = fadingColors[index];            
+        }
+    </script>
+    <!-- JS ENDS -->
+</body>
+</html>
