@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STARTS -->
+    <style>
+        body {
+            text-align: center;
+        }
+        p {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background-color: #423629;
+            width: 500px;
+            padding: 15px;
+        }
+    </style>
+    <!-- CSS ENDS -->
+    <title>getByClassname</title>
+</head>
+<body>
+    <p class="main-char">Grace Soult</p>
+    <p class="supporting-char">Rauhl Soult</p>
+    <p class="supporting-char">Abrahamech</p>
+    <p class="supporting-char">Oliver Barreau</p>
+
+    <!-- JS STARTS -->
+    <script>
+        document.getElementsByClassName("supporting-char")[0].style.backgroundColor = "#584837";
+
+        document.getElementsByClassName("supporting-char")[1].style.backgroundColor = "#64523F";
+
+        document.getElementsByClassName("supporting-char")[2].style.backgroundColor = "#715D47";
+    </script>
+    <!-- JS ENDS -->
+</body>
+</html>
