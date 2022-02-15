@@ -1,0 +1,52 @@
+cd unix_tests
+
+mv trybe.txt renamedtrybe.txt
+
+> ls
+renamedtrybe.txt  trybe_backup.txt
+
+mkdir backup
+
+mv trybe_backup.txt '/home/martins/Área de Trabalho/Trybe/Trybe Exercícios/Fundamentos Web/bloco-01-unix-bash-&-shell/unix_tests/backup'
+
+> cd backup 
+> ls
+trybe_backup.txt
+
+> cd ..
+> mkdir backup2
+> pwd
+mv trybe_backup.txt ./../backup2
+
+> cd ..
+rmdir backup
+
+> ls
+backup2  renamedtrybe.txt
+
+mv backup2 backup
+> ls
+backup  renamedtrybe.txt
+
+> pwd
+/home/martins/Área de Trabalho/Trybe/Trybe Exercícios/Fundamentos Web/bloco-01-unix-bash-&-shell/unix_tests
+
+rm -rf backup
+>ls
+renamedtrybe.txt
+
+> clear
+
+> head -5 skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+
+> tail -4 skills.txt
+CSS
+JavaScript
+React
+SQL
+
