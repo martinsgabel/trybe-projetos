@@ -1,8 +1,8 @@
-// const firstLi = document.getElementById('first-li');
-// const secondLi = document.getElementById('second-li');
-// const thirdLi = document.getElementById('third-li');
-// const input = document.getElementById('input');
-// const myWebpage = document.getElementById('my-spotrybefy');
+const firstLi = document.getElementById('first-li');
+const secondLi = document.getElementById('second-li');
+const thirdLi = document.getElementById('third-li');
+const input = document.getElementById('input');
+const myWebpage = document.getElementById('my-spotrybefy');
 
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
@@ -10,8 +10,15 @@
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-function addClassTech () {
-  li.className === "tech" ? li.classList.remove("tech") : li.className = "tech";
+function addClassTech (event) {
+  for (let index = 0; index < liList.length; index++) {
+    if (liList[index].className === "tech") {
+      liList[index].classList.remove("tech");
+    }
+    console.log(liList[index])
+  }
+
+  event.target.className = "tech";
 }
 
 let liList = document.getElementsByTagName('li');
@@ -24,12 +31,12 @@ for (let index = 0; index < liList.length; index++) {
 // com a classe 'tech';
 
 function writeHere (){
-  let newText = document.getElementById('input');
-  reWritten.innerHTML = newText.innerHTML;
+  let board = document.getElementsByClassName("tech")[0];
+  board.innerText = caixaTexto.value;
 }
 
-let reWritten = document.getElementsByClassName('tech')[0];
-reWritten.addEventListener("keyup", writeHere)
+let caixaTexto = document.getElementById('input');
+caixaTexto.addEventListener("keyup", writeHere);
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
@@ -64,7 +71,7 @@ function resetText(event) {
   // O Event é passado como um parâmetro para a função.
   event.target.innerText = 'Opção reiniciada';
   // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
+  // que retorna o objeto que disparou o evento. 
 }
 
 firstLi.addEventListener('dblclick', resetText);
