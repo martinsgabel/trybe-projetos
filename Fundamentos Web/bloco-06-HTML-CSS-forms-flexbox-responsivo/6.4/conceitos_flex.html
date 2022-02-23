@@ -1,0 +1,63 @@
+<!-- 
+    Display FLEX automaticamente coloca os elementos alinhados na *horizontal* e colados um no outro. 
+
+    MAIN AXIS é definido por [ flex direction ] que pode ser:
+        > horizontal se torna o MAIN -- row ou row-reverse
+        > vertical se torna o MAIN -- column ou column-reverse
+
+    FLEX LINES
+    Pode ser single-line ou multi-line, definido por [ flex-wrap ] (wrap/nowrap)
+        Padrão é: nowrap, ele não quebra a linha ele tenta fazer caber até estourar pra fora do container. Assim, os elementos acabam saindo do container se forem muito grandes. 
+
+    flex-direction + flex-wrap 
+        flex-flow: direction wrap;
+
+    ALINHAMENTOS 
+    [ justify-content ] ajusta o espaço ENTRE os elementos, usando sempre o Main Axis como referência.
+
+    [ align-content ] ajusta o *espaçamento ENTRE os elementos no Cross Axis.
+
+    [ align-items ] *posicionado dos elementos no Cross Axis.
+        > tem como padrão 'stretch'
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flexbox - Flex Flow</title>
+     <!-- CSS STARTS -->
+     <style>
+       .box {
+         color: #9069EF;
+         background-color: rgb(243, 243, 243);
+         border: 2px solid #232525;
+         font-size: 50px;
+         height: 60px;
+         margin: 10px 5px;
+         text-align: center;
+         width: 30%;
+       }
+ 
+       .box-container {
+         background-color: #0fa36b;
+         display: flex;
+         /* ADICIONE AQUI SEUS TESTES */
+         flex-direction: column;
+         flex-wrap: wrap;
+       }
+     </style>
+     <!-- CSS ENDS -->
+ 
+   </head>
+   <body>
+     <div class="box-container">
+       <div class="box">1</div>
+       <div class="box">2</div>
+       <div class="box">3</div>
+       <div class="box">4</div>
+       <div class="box">5</div>
+     </div>
+   </body>
+ </html>
