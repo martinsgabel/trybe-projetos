@@ -1,0 +1,1 @@
+// https://app.betrybe.com/course/fundamentals/higher-order-functions-do-javascript-es6/javascript-es6-introducao-a-higher-order-functions/1f03dcec-91e1-411b-b296-820a8106e0ef/exercicios/a342e01c-4275-4286-a251-a64f4d2d6825/bonus/398e33f0-675d-4587-ac57-374b19e8c302?use_case=next_button
